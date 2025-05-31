@@ -1,3 +1,8 @@
+// app/products/page.tsx
+
+export const dynamic = 'force-dynamic'; 
+// これを追加することで、このページは常にサーバーサイドで動的にレンダリングされます。
+
 import { Suspense } from "react";
 import { getProducts } from "@/lib/data/products";
 import { getCategories } from "@/lib/data/categories";
